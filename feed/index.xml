@@ -12,7 +12,7 @@
 	<atom:link href="https://khangpro8807.github.io/mywordpress/feed/" rel="self" type="application/rss+xml" />
 	<link>https://khangpro8807.github.io/mywordpress</link>
 	<description></description>
-	<lastBuildDate>Wed, 19 Oct 2022 06:17:23 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 26 Oct 2022 05:52:33 +0000</lastBuildDate>
 	<language>vi</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -27,5 +27,23 @@
 	<width>32</width>
 	<height>32</height>
 </image> 
-</channel>
+	<item>
+		<title>Post</title>
+		<link>https://khangpro8807.github.io/mywordpress/2022/10/26/post/</link>
+					<comments>https://khangpro8807.github.io/mywordpress/2022/10/26/post/#respond</comments>
+		
+		<dc:creator><![CDATA[NguyenDuyKhang2703]]></dc:creator>
+		<pubDate>Wed, 26 Oct 2022 05:52:25 +0000</pubDate>
+				<category><![CDATA[Chưa phân loại]]></category>
+		<guid isPermaLink="false">https://khangpro8807.github.io/mywordpress/?p=2270</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>https://khangpro8807.github.io/mywordpress/2022/10/26/post/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
 </rss>
