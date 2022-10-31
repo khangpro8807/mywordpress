@@ -61,6 +61,7 @@ img.emoji {
 	<link rel="stylesheet" id="callNowMevivu-css" href="https://khangpro8807.github.io/mywordpress/wp-content/plugins/floating-click-to-contact-buttons/css/callNow.css?ver=6.0.3" media="all">
 <link rel="stylesheet" id="floatingbutton-css" href="https://khangpro8807.github.io/mywordpress/wp-content/plugins/floating-click-to-contact-buttons/css/style.css?ver=6.0.3" media="all">
 <link rel="stylesheet" id="modal-css" href="https://khangpro8807.github.io/mywordpress/wp-content/plugins/floating-click-to-contact-buttons/css/modal.css?ver=6.0.3" media="all">
+<link rel="stylesheet" id="anwp-pg-styles-css" href="https://khangpro8807.github.io/mywordpress/wp-content/plugins/anwp-post-grid-for-elementor/public/css/styles.min.css?ver=0.9.1" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="https://khangpro8807.github.io/mywordpress/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3" media="all">
 <style id="wp-block-library-theme-inline-css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}</style>
 <link rel="stylesheet" id="wpzoom-social-icons-block-style-css" href="https://khangpro8807.github.io/mywordpress/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/style-wpzoom-social-icons.css?ver=4.2.8" media="all">
@@ -174,6 +175,18 @@ line-height: 1.8;
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=vietnamese&#038;ver=6.0.3" media="all">
 <script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script id="jquery-js-after">var v = jQuery.fn.jquery;
+			if (v && parseInt(v) >= 3 && window.self === window.top) {
+				var readyList=[];
+				window.originalReadyMethod = jQuery.fn.ready;
+				jQuery.fn.ready = function(){
+					if(arguments.length && arguments.length > 0 && typeof arguments[0] === "function") {
+						readyList.push({"c": this, "a": arguments});
+					}
+					return window.originalReadyMethod.apply( this, arguments );
+				};
+				window.wpfReadyList = readyList;
+			}</script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.7.8" id="font-awesome-4-shim-js"></script>
 <link rel="https://api.w.org/" href="https://khangpro8807.github.io/mywordpress/wp-json/">
 <link rel="alternate" type="application/json" href="https://khangpro8807.github.io/mywordpress/wp-json/wp/v2/product/1794">
@@ -200,16 +213,16 @@ line-height: 1.8;
 			}
 		
 					.custom-header-button:hover {
-				background-color: #424242 !important;
-				border-color: #424242 !important;
+				background-color: #ffffff !important;
+				border-color: #ffffff !important;
 			}
 		
                     .navbar {
-                background-color: #bababa;
+                background-color: #ffffff;
             }
         
                     .site-footer {
-                background-color: #1f2b3b;
+                background-color: #1a1a1a;
             }
         
         
@@ -218,7 +231,7 @@ line-height: 1.8;
 			.has-header-image.inspiro-front-page .headroom--not-top .navbar, 
 			.has-header-video.home.blog .headroom--not-top .navbar, 
 			.has-header-video.inspiro-front-page .headroom--not-top .navbar {
-				background-color: #bababa;
+				background-color: #ffffff;
 			}</style>
 		<link rel="icon" href="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/cropped-woodmart-favicon-512px-270x270-2.png" sizes="32x32">
 <link rel="icon" href="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/cropped-woodmart-favicon-512px-270x270-2.png" sizes="192x192">
@@ -235,11 +248,14 @@ html, body{
 }
 .menu-item:hover {
 	color: #0f4034;
-}</style>
+}
+body {
+    overflow-x: hidden;
+ }</style>
 		
 </head>
 
-<body class="product-template-default single single-product postid-1794 wp-custom-logo wp-embed-responsive theme-inspiro woocommerce woocommerce-page woocommerce-no-js ehf-template-inspiro ehf-stylesheet-inspiro woolentor_current_theme_inspiro has-sidebar inspiro--with-page-nav page-layout-full-width post-display-content-excerpt title-tagline-hidden colors-light woolentor-empty-cart elementor-default elementor-kit-64">
+<body class="product-template-default single single-product postid-1794 wp-custom-logo wp-embed-responsive theme-inspiro woocommerce woocommerce-page woocommerce-no-js theme--inspiro ehf-template-inspiro ehf-stylesheet-inspiro woolentor_current_theme_inspiro has-sidebar inspiro--with-page-nav page-layout-full-width post-display-content-excerpt title-tagline-hidden colors-light woolentor-empty-cart elementor-default elementor-kit-64">
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <aside id="side-nav" class="side-nav" tabindex="-1">
 	<div class="side-nav__scrollable-container">
@@ -255,10 +271,10 @@ html, body{
 							<nav class="mobile-menu-wrapper" aria-label="Mobile Menu" role="navigation">
 					<ul id="menu-trangchu" class="nav navbar-nav">
 <li id="menu-item-1868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1868"><a href="https://khangpro8807.github.io/mywordpress/">Home</a></li>
-<li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://khangpro8807.github.io/mywordpress/blog/">Blog</a></li>
 <li id="menu-item-1823" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1823"><a href="https://khangpro8807.github.io/mywordpress/shop/">Shop</a></li>
 <li id="menu-item-1876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1876"><a href="https://khangpro8807.github.io/mywordpress/about-us/">About Us</a></li>
 <li id="menu-item-1877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1877"><a href="https://khangpro8807.github.io/mywordpress/contact/">Contact</a></li>
+<li id="menu-item-2348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2348"><a href="https://khangpro8807.github.io/mywordpress/cart/">Cart</a></li>
 </ul>				</nav>
 						<div id="block-2" class="widget widget_block widget_search">
 <form role="search" method="get" action="http://localhost/myproject/wordpress/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
@@ -272,6 +288,10 @@ html, body{
 <div class="wp-container-1 wp-block-group"><div class="wp-block-group__inner-container">
 <h2>Bài viết mới</h2>
 <ul class="wp-block-latest-posts__list wp-block-latest-posts">
+<li><a class="wp-block-latest-posts__post-title" href="https://khangpro8807.github.io/mywordpress/2022/10/31/seating-collection-inspiration/">Seating collection inspiration</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://khangpro8807.github.io/mywordpress/2022/10/31/minimalist-design-furniture-2022/">Minimalist design furniture 2022</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://khangpro8807.github.io/mywordpress/2022/10/31/reinterprets-the-classic-bookshelf/">Reinterprets the classic bookshelf</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://khangpro8807.github.io/mywordpress/2022/10/31/green-interior-design-inspiration/">Green interior design inspiration</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="https://khangpro8807.github.io/mywordpress/2022/10/26/post/">Post</a></li>
 </ul>
 </div></div>
@@ -302,16 +322,16 @@ html, body{
 				<nav class="primary-menu-wrapper navbar-collapse collapse" aria-label="Top Horizontal Menu" role="navigation">
 					<ul id="menu-trangchu-1" class="nav navbar-nav dropdown sf-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1868"><a href="https://khangpro8807.github.io/mywordpress/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://khangpro8807.github.io/mywordpress/blog/">Blog</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1823"><a href="https://khangpro8807.github.io/mywordpress/shop/">Shop</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1876"><a href="https://khangpro8807.github.io/mywordpress/about-us/">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1877"><a href="https://khangpro8807.github.io/mywordpress/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2348"><a href="https://khangpro8807.github.io/mywordpress/cart/">Cart</a></li>
 </ul>				</nav>
 			</div>
 				
 		<div class="header-widgets-wrapper">
 			
-			<div id="sb-search" class="sb-search" style="display: block;">
+			<div id="sb-search" class="sb-search" style="display: none;">
 				
 <form method="get" id="searchform" action="http://localhost/myproject/wordpress/">
 	<label for="search-form-input">
@@ -382,8 +402,8 @@ html, body{
 	<form class="cart" action="http://localhost/myproject/wordpress/product/decoration-wooden-present/" method="post" enctype="multipart/form-data">
 		
 			<div class="quantity">
-				<label class="screen-reader-text" for="quantity_6358ef601ec24">Decoration wooden present số lượng</label>
-		<input type="number" id="quantity_6358ef601ec24" class="input-text qty text" step="1" min="1" max="300" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric" autocomplete="off">
+				<label class="screen-reader-text" for="quantity_6360022dee547">Decoration wooden present số lượng</label>
+		<input type="number" id="quantity_6360022dee547" class="input-text qty text" step="1" min="1" max="300" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric" autocomplete="off">
 			</div>
 	
 		<button type="submit" name="add-to-cart" value="1794" class="single_add_to_cart_button button alt">Thêm vào giỏ hàng</button>
@@ -476,7 +496,7 @@ html, body{
 <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gửi đi"> <input type="hidden" name="comment_post_ID" value="1794" id="comment_post_ID">
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9366b95825"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e4b4515e89"></p>
 <p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="242"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>
 </form>	</div>
 <!-- #respond -->
@@ -497,17 +517,10 @@ html, body{
 		<ul class="products columns-4">
 
 			
-					<li class="product type-product post-1898 status-publish first instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://khangpro8807.github.io/mywordpress/product/amazing-pen-cup-wood/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/product-accessories-5.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Amazing pen cup wood</h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>259.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://khangpro8807.github.io/mywordpress/product/decoration-wooden-present/?add-to-cart=1898" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1898" data-product_sku="02" aria-label="Thêm &ldquo;Amazing pen cup wood&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
-</li>
-
-			
-					<li class="product type-product post-1963 status-publish instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
-	<a href="https://khangpro8807.github.io/mywordpress/product/decoration-for-table-pen/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/product-furniture-14.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Decoration for table pen</h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>359.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://khangpro8807.github.io/mywordpress/product/decoration-for-table-pen/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="1963" data-product_sku="09" aria-label="Lựa chọn cho &ldquo;Decoration for table pen&rdquo;" rel="nofollow">Lựa chọn các tùy chọn</a>
+					<li class="product type-product post-1993 status-publish first instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://khangpro8807.github.io/mywordpress/product/keys-wood-acceesories/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/accessories1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Keys wood acceesories</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>199.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</a><a href="https://khangpro8807.github.io/mywordpress/product/decoration-wooden-present/?add-to-cart=1993" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1993" data-product_sku="19" aria-label="Thêm &ldquo;Keys wood acceesories&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
 </li>
 
 			
@@ -518,10 +531,17 @@ html, body{
 </li>
 
 			
-					<li class="product type-product post-1993 status-publish last instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://khangpro8807.github.io/mywordpress/product/keys-wood-acceesories/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/accessories1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Keys wood acceesories</h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>199.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://khangpro8807.github.io/mywordpress/product/decoration-wooden-present/?add-to-cart=1993" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1993" data-product_sku="19" aria-label="Thêm &ldquo;Keys wood acceesories&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
+					<li class="product type-product post-1878 status-publish instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://khangpro8807.github.io/mywordpress/product/wine-bottle-lantern/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/product-furniture-11.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Wine bottle lantern</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>399.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</a><a href="https://khangpro8807.github.io/mywordpress/product/decoration-wooden-present/?add-to-cart=1878" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1878" data-product_sku="28" aria-label="Thêm &ldquo;Wine bottle lantern&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
+</li>
+
+			
+					<li class="product type-product post-2000 status-publish last instock product_cat-accessories has-post-thumbnail taxable shipping-taxable purchasable product-type-variable">
+	<a href="https://khangpro8807.github.io/mywordpress/product/wooden-bow-tie-man/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://khangpro8807.github.io/mywordpress/wp-content/uploads/2022/10/product-accessories-1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" sizes="100vw"><h2 class="woocommerce-loop-product__title">Wooden bow tie man</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>359.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</a><a href="https://khangpro8807.github.io/mywordpress/product/wooden-bow-tie-man/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="2000" data-product_sku="29" aria-label="Lựa chọn cho &ldquo;Wooden bow tie man&rdquo;" rel="nofollow">Lựa chọn các tùy chọn</a>
 </li>
 
 			
@@ -680,6 +700,24 @@ html, body{
 		})();</script>
 	<style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
 <style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.1" id="jquery-ui-menu-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/dom-ready.min.js?ver=d996b53411d1533a84951212ab6ac4ff" id="wp-dom-ready-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3" id="wp-hooks-js"></script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+</script>
+<script id="wp-a11y-js-translations">( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-08-24 07:53:05+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"Notifications":["Thông báo"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );</script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/dist/a11y.min.js?ver=a38319d7ba46c6e60f7f9d4c371222c5" id="wp-a11y-js"></script>
+<script id="jquery-ui-autocomplete-js-extra">var uiAutocompleteL10n = {"noResults":"Không tìm thấy kết quả.","oneResult":"Đã tìm thấy 1 kết quả. Hãy dùng phím lên và xuống để di chuyển.","manyResults":"%d kết quả được tìm thấy. Sử dụng phím lên \/ xuống để xem.","itemSelected":"Mục được chọn."};</script>
+<script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.1" id="jquery-ui-autocomplete-js"></script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/floating-click-to-contact-buttons/main.js?ver=1.1" id="mevivuScript-js"></script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/woolentor-addons/woolentor-blocks/src/assets/js/script.js?ver=2.4.6" id="woolentor-block-main-js"></script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.0.0" id="jquery-blockui-js"></script>
@@ -703,6 +741,6 @@ html, body{
 <script src="https://khangpro8807.github.io/mywordpress/wp-includes/js/comment-reply.min.js?ver=6.0.3" id="comment-reply-js"></script>
 <script src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1665557951" id="zoom-social-icons-widget-frontend-js"></script>
 <script defer src="https://khangpro8807.github.io/mywordpress/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1665557908" id="akismet-frontend-js"></script>
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;left: -100%;" height="0" width="0"><symbol id="icon-anwp-pg-calendar" viewbox="0 0 14 16"><path fill-rule="evenodd" d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"></path></symbol><symbol id="icon-anwp-pg-clock" viewbox="0 0 14 16"><path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></symbol><symbol id="icon-anwp-pg-comment-discussion" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"></path></symbol><symbol id="icon-anwp-pg-device-camera" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M15 3H7c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM6 5H2V4h4v1zm4.5 7C8.56 12 7 10.44 7 8.5S8.56 5 10.5 5 14 6.56 14 8.5 12.44 12 10.5 12zM13 8.5c0 1.38-1.13 2.5-2.5 2.5S8 9.87 8 8.5 9.13 6 10.5 6 13 7.13 13 8.5z"></path></symbol><symbol id="icon-anwp-pg-eye" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></symbol><symbol id="icon-anwp-pg-pencil" viewbox="0 0 24 24"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"></path></symbol><symbol id="icon-anwp-pg-person" viewbox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"></path></symbol><symbol id="icon-anwp-pg-play" viewbox="0 0 14 16"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"></path></symbol><symbol id="icon-anwp-pg-tag" viewbox="0 0 14 16"><path fill-rule="evenodd" d="M7.685 1.72a2.49 2.49 0 00-1.76-.726H3.48A2.5 2.5 0 00.994 3.48v2.456c0 .656.269 1.292.726 1.76l6.024 6.024a.99.99 0 001.402 0l4.563-4.563a.99.99 0 000-1.402L7.685 1.72zM2.366 7.048a1.54 1.54 0 01-.467-1.123V3.48c0-.874.716-1.58 1.58-1.58h2.456c.418 0 .825.159 1.123.467l6.104 6.094-4.702 4.702-6.094-6.114zm.626-4.066h1.989v1.989H2.982V2.982h.01z"></path></symbol><symbol id="icon-anwp-pg-trash" viewbox="0 0 24 24"><path fill-rule="evenodd" d="M16 1.75V3h5.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H8V1.75C8 .784 8.784 0 9.75 0h4.5C15.216 0 16 .784 16 1.75zm-6.5 0a.25.25 0 01.25-.25h4.5a.25.25 0 01.25.25V3h-5V1.75z"></path><path d="M4.997 6.178a.75.75 0 10-1.493.144L4.916 20.92a1.75 1.75 0 001.742 1.58h10.684a1.75 1.75 0 001.742-1.581l1.413-14.597a.75.75 0 00-1.494-.144l-1.412 14.596a.25.25 0 01-.249.226H6.658a.25.25 0 01-.249-.226L4.997 6.178z"></path><path d="M9.206 7.501a.75.75 0 01.793.705l.5 8.5A.75.75 0 119 16.794l-.5-8.5a.75.75 0 01.705-.793zm6.293.793A.75.75 0 1014 8.206l-.5 8.5a.75.75 0 001.498.088l.5-8.5z"></path></symbol></svg>
 </body>
 </html>
